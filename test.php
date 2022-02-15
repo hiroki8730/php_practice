@@ -53,9 +53,9 @@ $blog2 = [
 // 多次元配列
 // 配列の中に配列
 $blogs = [$blog1, $blog2];
-echo '<pre>';
-var_dump($blogs);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($blogs);
+// echo '</pre>';
 
 // do {繰り返す処理} while (条件)
 // $i = 0;
@@ -69,6 +69,31 @@ echo '</pre>';
 // for ($i = 0; $i < 11; $i++) {
 //     echo $i;
 // }
+
+// ループ処理
+// foreachの練習
+// ①バリューのみ出力
+foreach($blog1 as $blog) {
+    // echo '<pre>';
+    // echo $blog;
+    // echo '</pre>';
+}
+
+// ②キーとバリューの出力
+foreach($blog2 as $key => $value) {
+//     echo '<pre>';
+//     echo $key , "=" , $value;
+//     echo '</pre>';
+};
+
+foreach($blogs as $blog) {
+    foreach($blog as $value) {
+        echo '<pre>';
+        echo $value;
+        echo '</pre>';
+    };
+};
+
 
 
 ?>
